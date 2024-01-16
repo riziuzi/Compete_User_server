@@ -144,4 +144,6 @@ app.post("/make-private", async (req, res) => {
   }
 })
 
-app.listen(3005, () => { console.log("Server started listeing on 3005") })
+const port = process.env.PORT || 3005
+
+app.listen(port, () => { console.log("Server started listeing on 3005") })
